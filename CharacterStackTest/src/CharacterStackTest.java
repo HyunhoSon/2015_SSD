@@ -4,6 +4,8 @@ import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 
+import defect.CharacterStack;
+
 
 public class CharacterStackTest {
 
@@ -16,8 +18,9 @@ public class CharacterStackTest {
 	}
 
 	@Test
-	public void testCharacterStack() {
-		fail("Not yet implemented");
+	public void testCharacterStack_DefaultConstructor() {
+		CharacterStack stack = new CharacterStack() ;
+		assertEquals(0, stack.getSize()) ;
 	}
 
 }
